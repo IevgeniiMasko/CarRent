@@ -1,3 +1,4 @@
+import { Main } from '@/features/Landing';
 import { Header } from '@/layouts/Header';
 import Head from 'next/head';
 
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <main>
         <Header />
+        <Main />
       </main>
     </>
   );
