@@ -1,0 +1,13 @@
+{
+  "name": {
+    "short": "Eng",
+    "full": "English"
+  },
+  "header": {
+    "search": "Search car",
+    "more": "More",
+    "earn": "Earn with RentCar",
+    "signin": "Signin",
+    "signup": "Signup"
+  }
+}
