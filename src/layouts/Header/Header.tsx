@@ -19,47 +19,49 @@ const Header = () => {
   const langContent = useLangContent('header');
 
   return (
-    <Container>
-      <header className={styles.header}>
-        <div className={styles.headerLeft}>
-          <div className={styles.logo}>
-            <Image src={logo} alt="logo" priority />
+    <div className={styles.header}>
+      <Container>
+        <div className={styles.body}>
+          <div className={styles.headerLeft}>
+            <div className={styles.logo}>
+              <Image src={logo} alt="logo" priority />
+            </div>
+            <nav className={styles.mainNav}>
+              <ul>
+                <li>
+                  <a href="#">{langContent.search}</a>
+                </li>
+                <li>
+                  <a href="#">{langContent.more}</a>
+                </li>
+                <li>
+                  <a href="#">{langContent.earn}</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav className={styles.mainNav}>
-            <ul>
-              <li>
-                <a href="#">{langContent.search}</a>
-              </li>
-              <li>
-                <a href="#">{langContent.more}</a>
-              </li>
-              <li>
-                <a href="#">{langContent.earn}</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
 
-        <div className={styles.headerRight}>
-          <nav className={styles.userNav}>
-            <ul className={styles.userNavList}>
-              <li>
-                <LangSwitcher />
-              </li>
-              <li>
-                <a href="#">{langContent.signin}</a>
-              </li>
-              <li>
-                <a href="#">{langContent.signup}</a>
-              </li>
-            </ul>
-          </nav>
-          <div className={styles.userIcon}>
-            <PersonIcon />
+          <div className={styles.headerRight}>
+            <nav className={styles.userNav}>
+              <ul className={styles.userNavList}>
+                <li>
+                  <LangSwitcher />
+                </li>
+                <li>
+                  <a href="#">{langContent.signin}</a>
+                </li>
+                <li>
+                  <a href="#">{langContent.signup}</a>
+                </li>
+              </ul>
+            </nav>
+            <div className={styles.userIcon}>
+              <PersonIcon />
+            </div>
           </div>
         </div>
-      </header>
-    </Container>
+      </Container>
+    </div>
   );
 };
 
